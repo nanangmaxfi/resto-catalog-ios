@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestoCell" id="KGk-i7-Jjw" customClass="RestoTableViewCell" customModule="SubmissionRestoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-SR-lWr">
+                        <rect key="frame" x="16" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="uKc-ht-e7g"/>
+                            <constraint firstAttribute="height" constant="80" id="vVa-Nb-Io0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-Jd-3Lp">
+                        <rect key="frame" x="104" y="16" width="294" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi8-Hm-u6W">
+                        <rect key="frame" x="104" y="40" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFZ-n3-RTW">
+                        <rect key="frame" x="104" y="57" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gi8-Hm-u6W" secondAttribute="trailing" constant="16" id="1t1-CQ-iol"/>
+                    <constraint firstItem="qFZ-n3-RTW" firstAttribute="leading" secondItem="ZLR-SR-lWr" secondAttribute="trailing" constant="8" id="B2R-wE-YTI"/>
+                    <constraint firstItem="qFZ-n3-RTW" firstAttribute="top" secondItem="gi8-Hm-u6W" secondAttribute="bottom" id="BHc-ho-ezV"/>
+                    <constraint firstItem="ZLR-SR-lWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Sy8-5W-eFZ"/>
+                    <constraint firstItem="gi8-Hm-u6W" firstAttribute="leading" secondItem="ZLR-SR-lWr" secondAttribute="trailing" constant="8" id="Tf3-rh-Gwr"/>
+                    <constraint firstAttribute="bottom" secondItem="ZLR-SR-lWr" secondAttribute="bottom" constant="16" id="UNZ-yV-oXL"/>
+                    <constraint firstItem="PIx-Jd-3Lp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Zag-mP-UOq"/>
+                    <constraint firstAttribute="trailing" secondItem="PIx-Jd-3Lp" secondAttribute="trailing" constant="16" id="co7-DE-FgZ"/>
+                    <constraint firstItem="gi8-Hm-u6W" firstAttribute="top" secondItem="PIx-Jd-3Lp" secondAttribute="bottom" id="kOM-tm-svQ"/>
+                    <constraint firstItem="PIx-Jd-3Lp" firstAttribute="leading" secondItem="ZLR-SR-lWr" secondAttribute="trailing" constant="8" id="meT-Hs-tU1"/>
+                    <constraint firstItem="ZLR-SR-lWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="qbA-cR-MQL"/>
+                    <constraint firstAttribute="trailing" secondItem="qFZ-n3-RTW" secondAttribute="trailing" constant="16" id="zOd-0q-i0I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityResto" destination="gi8-Hm-u6W" id="LFI-eu-d9c"/>
+                <outlet property="descResto" destination="qFZ-n3-RTW" id="AGL-Ny-DG3"/>
+                <outlet property="imageResto" destination="ZLR-SR-lWr" id="SKe-KW-HHG"/>
+                <outlet property="nameResto" destination="PIx-Jd-3Lp" id="Txm-rS-GVb"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="95"/>
+        </tableViewCell>
+    </objects>
+</document>
